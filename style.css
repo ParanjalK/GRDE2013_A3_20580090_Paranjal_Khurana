@@ -1,0 +1,227 @@
+/*  # for id
+    . for class
+      for other functions */
+
+  /*imports local fonts*/
+  @font-face {
+    font-family: DProRegCon;
+    src: url(fonts/DugasPro-BlackSemi-condensed.ttf);
+}
+@font-face {
+    font-family: ActayReg;
+    src: url(fonts/Actay-Regular.otf);
+}
+@font-face {
+    font-family: ActayRegItc;
+    src: url(fonts/Actay-RegularItalic.otf);
+}
+
+.body {
+    animation: fadeIn 5s;}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+body {
+    background-color: rgb(233, 228, 219);
+}
+
+
+  /* reference codepen: https://codepen.io/TaniaLD/details/kOeKKy */
+   /* heavily edited
+   - animation size/colour/shape/duration/pattern altered
+   - animation reversed
+
+   .loader4{
+    position: relative;
+    width: 150px;
+    height: 20px;
+  
+    top: 45%;
+    top: -webkit-calc(50% - 10px);
+    top: calc(50% - 10px);
+    left: 25%;
+    left: -webkit-calc(50% - 75px);
+    left: calc(50% - 75px);
+  
+    background-color: rgba(255,255,255,0.2);
+  }
+
+  #loader:after{
+    content: "";
+    position: absolute;
+    background-color:#a9a99a;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: 0;
+    opacity: 1;
+    -webkit-transform-origin:  0% 100%;
+        transform-origin:  0% 100% ;
+    -webkit-animation: loader 7.5s ease-in-out infinite;
+        animation: loader 7.5s ease-in-out infinite;
+        animation-direction: reverse;
+  }
+  
+  #loader:before{
+    content: "LOADING...";
+    z-index: 99;
+    color:#000000;
+    font-family: "DProRegCon" ;
+    font-weight: 200;
+    font-size: 24vw;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    left: 0;
+    top: 0;
+  }
+  
+  @-webkit-keyframes loader{
+      0%{width: 0px;}
+      70%{width: 100%; opacity: 1;}
+      90%{opacity: 0; width: 100%;}
+      100%{opacity: 0;width: 0px;}
+  }
+  
+  @keyframes loader{
+      0%{width: 0px;}
+      70%{width: 100%; opacity: 1;}
+      90%{opacity: 0; width: 100%;}
+      100%{opacity: 0;width: 0px;}
+  }  reference ends here - didn't use it but I'll leave
+  it here for later - i want to figure out how to make it
+  do what i want*/
+
+#header {
+    display: none;
+}
+
+h1 {
+    margin-top: 2vw;
+    margin-left: 2vw;
+    font-family: DProRegCon;
+    font-size: 13vw;
+    letter-spacing: 0.2vw;
+    color: rgb(128, 35, 16);
+}
+
+h2 {
+    font-family: DProRegCon;
+    font-size: 7vw;
+    margin-left: 2vw;
+    margin-top: 4vw;
+    margin-bottom: 3vw;
+    padding: 0;
+}
+
+span {
+    font-family: ActayRegItc;
+    font-size: 1vw;
+    letter-spacing:normal;
+    color: rgb(44, 41, 41);
+}
+
+sl-card {
+    --border-radius: 1vw;
+    --border-width: 0.1vw; 
+    --border-color: black;
+    --border-style: solid;
+    font-size: 0.9vw;
+    margin: 0.5vw;
+    --sl-panel-background-color: #f1f1eb;
+    transform: all 3s ease-out;
+}
+
+sl-card:hover {
+    transform: scale(1.05);
+
+}
+
+.card-image {
+    max-width: 15vw;
+    font-family: ActayReg;
+  }
+
+#equipment {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+#method {
+    display: flex;
+    text-align: justify;
+    overflow: scroll;
+    font-family: ActayReg;
+    font-size: 0.7vw;
+    color: black;
+}
+
+.back-shape {
+    border-width: 0.1vw;
+    border-color: black;
+    border-radius: 1vw;
+    border-style: solid;
+    background: #a9a99a;
+    width: 100vw;
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 1.5vw;
+}
+
+.stepnum {
+    font-family: DProRegCon;
+    font-size: 4vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+p {
+    margin: 1vw;
+}
+
+sl-card :root {
+    border: 1vw;
+    border-radius: 1vw;
+    border-color: black;
+}
+
+sl-card::part(image){
+    border: 1vw;
+    border-color: black;
+}
+
+#slides-nav {
+    text-align:center;
+}
+
+#footerr.button {
+    font-family: ActayReg;
+    font-size: 1vw;
+
+}
+
+.topp{
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	letter-spacing: 1.2px ;
+	-webkit-font-smoothing: antialiased;
+    font-family: 'Poppins', sans-serif;
+	overflow: scroll;
+}
+
+#idk {
+    color:#5b5b52;
+}

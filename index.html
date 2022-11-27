@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="anime-master/lib/anime.min.js"></script>
+    <script src="gsap-public/minified/gsap.min.js"></script>
+    <title>Glossy Side Up</title>
+</head>
+
+<body class=body>
+  
+  <div id="container">
+     <div id="box">
+       <div id="loader"></div>
+     </div>
+ </div>
+
+    <div id="header"><a>top</a></div>
+
+    <div id="title" size="large" pill>
+      <h1>Glossy Side Up<span>a beginner's guide to developing black and white film</span></h1>
+    </div>
+
+    </div>
+
+    <section class="topp">
+      <h1 id="idk">SO YOU WANT TO LEARN HOW TO DEVELOP YOUR OWN BLACK AND WHITE FILM? </h1>
+    </section>
+
+    <h2>Materials</h2>
+
+    <div id="equipment">
+        <sl-card class="card-image" href="https://www.patersonphotographic.com/product/paterson-multi-reel-tanks/"> <!--imported from Shoelace UI and then edited-->
+            <img 
+              slot="image"
+              src="images/tank.jpeg" 
+              alt="Paterson Tank Kit"
+            />
+            Paterson Tank Kit
+          </sl-card>
+          <sl-card class="card-image" href="https://www.patersonphotographic.com/product/paterson-changing-bag/"> 
+            <img
+              slot="image"
+              src="images/darkbag.jpeg"
+              alt="Darkbag"
+            />
+            Darkbag
+          </sl-card>
+          <sl-card class="card-image" href="https://www.patersonphotographic.com/product/paterson-measuring-graduates/"> 
+            <img
+              slot="image"
+              src="images/measuringcylinder.jpeg"
+              alt="Measuring Cylinders"
+            />
+            Measuring Cylinder
+          </sl-card>
+          <sl-card class="card-image" href="https://www.patersonphotographic.com/product/thermometers/">
+            <img
+              slot="image"
+              src="images/thermometer.jpg"
+              alt="Thermometer"
+            />
+            Thermometer
+          </sl-card>
+          <sl-card class="card-image" href="https://www.amazon.com/s?k=scissors&crid=QOUXRNULENAS&sprefix=scissor%2Caps%2C360&ref=nb_sb_noss_1"> 
+            <img
+              slot="image"
+              src="images/scissors.jpg"
+              alt="Scissors"
+            />
+            Scissors
+          </sl-card>
+          <sl-card class="card-image" href="https://www.amazon.com/s?k=side+cutting+pliers&crid=30FB94H7IJH3H&sprefix=side+cuttingpliers%2Caps%2C315&ref=nb_sb_noss_2"> 
+            <img
+              slot="image"
+              src="images/pliers.jpg"
+              alt="Pliers"
+            />
+            Pliers
+          </sl-card>
+          <sl-card class="card-image" href="https://www.patersonphotographic.com/product/paterson-film-clip-set/"> 
+            <img
+              slot="image"
+              src="images/clips.jpeg"
+              alt="Clips"
+            />
+            Clips
+          </sl-card>
+          <sl-card class="card-image" href="https://www.amazon.com/s?k=tinted+airtight+bottle&crid=2518LTZLTJ0RR&sprefix=tinted+airtight+bottle%2Caps%2C313&ref=nb_sb_noss"> 
+            <img
+              slot="image"
+              src="images/bottle.jpeg"
+              alt="Bottle"
+            />
+            Bottle
+          </sl-card>
+          <sl-card class="card-image" href="https://www.ilfordphoto.com/id-11-product"> 
+            <img
+              slot="image"
+              src="images/developer.jpeg"
+              alt="Developer [ID-11]"
+            />
+            Developer [ID-11]
+          </sl-card>
+          <sl-card class="card-image" href="https://www.ilfordphoto.com/1893870"> 
+            <img
+              slot="image"
+              src="images/stopbath.jpg"
+              alt="Stopbath [Ilfostop]"
+            />
+            Stopbath [Ilfostop]
+          </sl-card>
+          <sl-card class="card-image" href="https://www.ilfordphoto.com/rapid-fixer-product"> 
+            <img
+              slot="image"
+              src="images/fixer.jpeg"
+              alt="Fixer [Rapid Fixer]"
+            />
+            Fixer [Rapid Fixer]
+          </sl-card>
+          <sl-card class="card-image" href="https://www.ilfordphoto.com/1905162"> 
+            <img
+              slot="image"
+              src="images/washaid.jpeg"
+              alt="Washaid [Ilfotol]"
+            />
+            Washaid [Ilfotol]
+          </sl-card>
+          <sl-card class="card-image" href="https://www.patersonphotographic.com/product/paterson-force-film-washer/"> 
+            <img
+              slot="image"
+              src="images/washer.jpeg"
+              alt="Pressure Washer"
+            />
+            Pressure Washer
+          </sl-card>
+          <sl-card class="card-image" href="https://www.patersonphotographic.com/product/paterson-film-squeegee/"> 
+            <img
+              slot="image"
+              src="images/squeegee.jpeg"
+              alt="Squeegee"
+            />
+            Squeegee
+          </sl-card>
+        </sl-card>
+        <sl-card class="card-image"> 
+          <img
+            slot="image"
+            src="images/waste.jpg"
+            alt="Waste Container"
+          />
+          Waste Container
+        </sl-card>
+        <sl-card class="card-image" href="https://www.patersonphotographic.com/product/paterson-funnel/"> 
+            <img
+              slot="image"
+              src="images/funnel.jpeg"
+              alt="Funnel"
+            />
+            Funnel
+          </sl-card>
+          <sl-card class="card-image"> 
+            <img
+              slot="image"
+              src="images/towel.jpg"
+              alt="Microfibre Towel"
+            />
+            Microfibre Towel
+          </sl-card>
+          <sl-card class="card-image"> 
+            <img
+              slot="image"
+              src="images/sleeves.jpg"
+              alt="Sleeves"
+            />
+            Sleeves
+          </sl-card>
+    </div>
+
+    <h2>Method</h2>
+        <div id="method">
+            <div class="back-shape" id="one">
+                <p class="stepnum">step 1</p>
+                <video width="700vw" height="500vw" controls>
+                    <source src="images/step1.mp4" type="video/mp4">
+                  </video>
+                <p> To get started, you'll need your roll of shot film, the Paterson 
+                  Tank kit with all included parts except for the agitation tool, film spools, 
+                  a pair of scissors, a darkbag or darkbox (can be susbstituted
+                  for a darkroom or a room in your house which you can light seal 
+                  into a makeshift darkroom), a set of pliers (only if you're 
+                  developing 35mm and don't have the tongue of the film roll out) 
+                  and a clean space to work in. 
+                  <br>
+                  <br>
+                  Place everything inside the darkbag/box/room and make sure no light 
+                  enters that area. You want to start by taking out all the film from the 
+                  canister. If the tongue is not out already, you'll need to pince the top 
+                  cap of the canister, twist inwards towards the centre of the spool and pull 
+                  to remove. Now you can take the plastic spool out and all the film should be 
+                  wrapped around. 
+                  <br>
+                  <br>
+                  Take the end of the film and cut the tongue off so both sides of your end of 
+                  film have sprokets. You will now feed this onto the spools. Before doing this 
+                  in the dark, I would strongly recommend practicing with some developed film or 
+                  sacrificing a roll to practice in a lit room since the tools you'll be using in 
+                  the dark can be dangerous if not handled with care. 
+                  <br>
+                  <br>
+                  If you're developing 120 film, life is lot easier in some ways and not so much 
+                  in others. Remove the little piece of paper in the middle that holds it all together 
+                  and remove all the backing paper as well. Eventually, you will reach a stiffer part 
+                  which is where the film begins. Unroll all of this away from the backing paper and 
+                  you will reach a long piece of masking tape attaching the end of the film to the backing 
+                  paper. Try to gently remove the masking tape without bending the film but if it doesn't 
+                  come off cleanly, you can opt to cut the join between the tape and paper or tear it.
+                  <br>
+                  <br>
+                  Once you've fed all the film onto the spools, put the spool onto the black centre piece 
+                  and place base side down into the Paterson Tank. Place the inner funnel cover piece on top 
+                  and twist to secure in place. You'll hear a distinct 'click' sound when it's locked. The lid 
+                  can be placed on top but isn't necessary since the tank is now light sealed. You can now 
+                  remove them from the bag and turn the lights on if you wish. 
+                </p>
+            </div>
+            <div class="back-shape" id="two">
+                <p class="stepnum">step 2</p>
+                <video width="700vw" height="500vw" controls>
+                    <source src="images/step2.mp4" type="video/mp4">
+                  </video>
+                  <p> For the next step in the process,  we'll begin by washing the film. You can use the 
+                    pressure film washer by attaching it onto your tap or do some manual agitation by turning
+                    the tank around. Wash twice and rinse well. Try to get as much of the water out as you can
+                    before pouring in the developer as to not dilute the developer solution unnecessarily. Before
+                    you pour in the developer, it is important to check the temperature of the solution. Depending
+                    on whether you use a 1:1 dilution of developer to water or develop with stock solution instead,
+                    it is important to check the development time for the film stock you are processing and to know
+                    what temperature to compensate for in the developing process. 
+                    <br>
+                    <br>
+                    Once you have your temperature and time, pour the developer in and secure the lid of the tank
+                    firmly. Agitate continually for the first minute and then for ten seconds every minute until 
+                    development time is over. Don't agitate harshly and try not to "shake" the tank as this may 
+                    create bubbles which can stick to the film and lead to uneven development. 
+                    <br>
+                    <br>
+                    When putting the tank down after agiatation, it is good practice to tap the tank firmly on your 
+                    working surface to ensure all the bubbles you may have created rise to the top of the solution and 
+                    pop. Once develpoment timer has reached 30 seconds (you have 30 seconds development time left on the 
+                    clock), remove the lid and pour developer into chemical waste container.
+                  </p>
+            </div>
+            <div class="back-shape" id="three">
+                <p class="stepnum">step 3</p>
+                <video width="700vw" height="500vw" controls>
+                    <source src="images/step3.mp4" type="video/mp4">
+                  </video>
+                  <p>Once you've poured the developer out, development time should be nearing its end and you can begin to 
+                    pour your stopbath solution into the tank. We're using Ilfostop which only requires 30 seconds when used 
+                    fresh but please refer to the instructions on the chemistry you use to get accurate timings for each procedure.
+                    <br>
+                    <br>
+                    Once the required amount of time has passed, you can pour the stop solution into an airtight bottle for later use 
+                    or dispose of it into the waste container. After stopbath, you must rinse your film so as to not contaminate your 
+                    fixer. Rinse well two to three times to make sure all the stopbath has been removed from the tank.
+                    </p>
+            </div>
+            <div class="back-shape" id="four">
+                <p class="stepnum">step 4</p>
+                <video width="700vw" height="500vw" controls>
+                    <source src="images/step4.mp4" type="video/mp4">
+                  </video>
+                  <p>Now your film is developed but the images on the negative will still not be visible and the film is still sensitive 
+                    to light. To fix the image onto the film and create a negative, the film must pass through a fixer solution. Mix your 
+                    fixer solution as instructed on the bottle and using the times recommended by the manufacturer, fix your film.
+                    <br>
+                    <br>
+                    We're using Ilford Rapid Fixer diluted 1:4 with water which fixes film in 2 minutes when used fresh. Note that you may 
+                    want to increase your fixing times as your working solution ages and becomes more contaminated with silver. Agitate for 
+                    ten seconds every 30 seconds and remember to tap to remove bubbles. 
+                    <br>
+                    <br>
+                    Pour your fixer into an airtight bottle for future use or dispose into a waste container. 
+                  </p>
+            </div>
+            <div class="back-shape" id="five">
+                <p class="stepnum">step 5</p>
+                <video width="700vw" height="500vw" controls>
+                    <source src="images/step6.mp4" type="video/mp4">
+                  </video>
+                  <p>Now that the film is fixed, you can remove it from the tank. It needs to be washed extremely well. You can choose to do 
+                    so in the tank or after removing it from the tank but remember to rinse it well and remove any and all fixer from the firm. 
+                    If you fail to do so properly, the fixer remaining on the film will slowly corrode it over time. Same goes for your tank and 
+                    other equipment so remember to always wash well. 
+                  </p>
+            </div>
+            <div class="back-shape" id="six">
+                <p class="stepnum">step 6</p>
+                <video width="700vw" height="500vw" controls>
+                    <source src="images/step7.mp4" type="video/mp4">
+                  </video>
+                  <p>Once you're sure you've rinsed all the fixer off, it's time to dilute washaid with 1:200 parts water and clean the film so we 
+                    can hang it to dry. Washaid is a mild detergent which helps remove any remaining chemicals from the film and helps it dry straight 
+                    and streak free. This step is optional but recommended since if you simply wash your film with water and hang it to dry, you may 
+                    end up with water stains on your film or even worse, fixer stains which discolour the negative making it very difficult to scan.
+                    <br>
+                    <br>
+                    Once rinsed in washaid, remove film from spools by disassembling the spool and hang to dry. Paterson clips are recommended since they 
+                    come in packs of two where one is weighted and the other is not meaning you can clip the light one on top and the heavy one on the bottom 
+                    to keep your film straight throughout the drying process. Hang somewhere with little to no dust and little activity so the film can dry 
+                    without getting in your way and/or attracting dust which can potentially scratch the film. 
+                  </p>
+            </div>
+            <div class="back-shape" id="seven">
+                <p class="stepnum">step 7</p>
+                <video width="700vw" height="500vw" controls>
+                    <source src="images/step8.mp4" type="video/mp4">
+                </video>
+                <p>Last but not least, it's time to clean everything. Make sure you clean all the equipment and your working surface with some sort of cleaning 
+                  solution. wipe up all spills and leave to dry. If you've spilled anything on the floor, mop it up and remember to cap your waste container.
+                  <br>
+                  <br>
+                  Chemicals should be stored at 20 degrees celsius. You can refrigerate them in the summer if you need and create a hot bath for them to bring them up 
+                  to approx. 20 degress when you need to use them. 
+                  <br>
+                  <br>
+                  Once your film is dry, there are a few ways of scanning it. From DSLR scanning to flatbed, many options for scanning your film at home exist but if 
+                  you wish to leave it up to the prfessionals, take your film to a local lab and they can scan it for you. Otherwise, you have another rabbit hole to 
+                  explore. DSLR scanning is the one with the best results but does require quite a hefty investment but if you have a digital camera already, it can be 
+                  a great way to scan film at home. Try it out!
+                </p>
+            </div>
+    </div>
+    
+    <div id="footer">
+        <sl-button variant="neutral" outline style="width: 100%; margin-bottom: 3vw;"
+        onclick="topFunction()" id="myBtn" size="medium" pill>Back To Top</sl-button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
